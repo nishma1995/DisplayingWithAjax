@@ -15,11 +15,11 @@ namespace DisplayingWithAjax.Controllers
         {
             return View();
         }
-        [HttpGet]
+        //[HttpGet]
         public ActionResult GetData()
         {
             using (EmployeeOperationManagementSystemEntities db = new EmployeeOperationManagementSystemEntities())
-           
+         
 
             {
                 List<Employee> employeeList = db.Employees.ToList<Employee>();
